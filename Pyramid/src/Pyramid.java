@@ -7,12 +7,14 @@ public class Pyramid {
     System.out.println("Enter a width for the pyramid: ");
     int pyramidWidth = input.nextInt();
 
-    for (int x = 0; x < pyramidWidth; x++)
-    {
-      for (int y = 0; y < pyramidWidth; y--)
-      {
+    for (int x = 1; x < pyramidWidth; x++) {
+      System.out.print(" ");
 
+      for (int y = x; y < pyramidWidth + 1; y++) {
+        System.out.print(y);
       }
+      System.out.println();
     }
   }
 }
+
