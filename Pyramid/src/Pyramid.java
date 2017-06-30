@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 public class Pyramid {
@@ -7,12 +6,13 @@ public class Pyramid {
     System.out.println("Enter a width for the pyramid: ");
     int pyramidWidth = input.nextInt();
 
-    for (int x = 1; x < pyramidWidth; x++) {
+    for (int x = pyramidWidth; x > 0; x--) {
       System.out.print(" ");
 
-      for (int y = x; y < pyramidWidth + 1; y++) {
-        System.out.print(y);
+      for (int i = x; i < pyramidWidth + 1; i++) {
+        System.out.print(" 1 ");
       }
+
       System.out.println();
     }
   }
