@@ -1,17 +1,34 @@
+/*
+Displays numbers in a pyramid pattern
+*/
 import java.util.*;
-
 public class Pyramid {
   public static void main(String args[]) {
+    int startSpace = 0;
+    int pyramidWidth;
+
+
     Scanner input = new Scanner(System.in);
     System.out.println("Enter a width for the pyramid: ");
-    int pyramidWidth = input.nextInt();
+    pyramidWidth = input.nextInt();
+    pyramidWidth = pyramidWidth;
 
-    for (int x = pyramidWidth; x > 0; x--) {
-      System.out.print(" ");
+    // TODO How is pyramidWidth being used?
 
-      for (int i = x; i < pyramidWidth + 1; i++) {
-        System.out.print(" 1 ");
+    for (int row = startSpace; row < pyramidWidth; row++)
+    {
+      // Controls white space
+      for (int j = 0; j < pyramidWidth - row; j++)
+      {
+        System.out.print("  ");
       }
+
+      // Displays ascending numners
+      for (int k = 0; k <= row; k++) {
+        System.out.print("1 ");
+      }
+
+      // TODO Display descending numbers
 
       System.out.println();
     }
