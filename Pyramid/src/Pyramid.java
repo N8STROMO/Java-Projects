@@ -1,9 +1,8 @@
-/*
-Displays numbers in a pyramid pattern
-*/
 import java.util.*;
-public class Pyramid {
-  public static void main(String args[]) {
+public class Pyramid
+{
+  public static void main(String args[])
+  {
     int startRight = 0;
     int pyramidWidth;
 
