@@ -3,39 +3,35 @@ public class Pyramid
 {
   public static void main(String args[])
   {
-    int startRight = 0;
     int pyramidWidth;
-
 
     Scanner input = new Scanner(System.in);
     System.out.println("Enter a width for the pyramid: ");
     pyramidWidth = input.nextInt();
 
-    // TODO Better way to implement considering pyramid width
-
-    for (int row = 1; row < pyramidWidth; row += row)
+    for (int row = 1; row <= pyramidWidth; row++)
     {
+      int endspace = pyramidWidth;
       // Controls white space
-      for (int startSpace = 0; startSpace < pyramidWidth; startSpace++)
+      for (int startSpace = 0; startSpace < endspace; startSpace++)
       {
         System.out.print(" ");
       }
 
       // Displays ascending numbers
-      for (int leftSide = 1; leftSide <= row; leftSide += leftSide)
+      for (int leftSide = 0; leftSide < row; leftSide++)
       {
         System.out.print("0");
       }
 
       // Display descending numbers
-      for (int rightSide = startRight; rightSide > 0; rightSide /= 2)
+      for (int rightSide = 0; rightSide < row - 1; rightSide++)
       {
         System.out.print("0");
       }
 
       System.out.println();
       pyramidWidth--;
-      startRight += row;
     }
   }
 }
