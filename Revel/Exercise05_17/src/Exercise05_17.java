@@ -1,3 +1,8 @@
+/**
+ * (Display pyramid) Write a program that prompts the user to enter an integer
+ *  from 1 to 15 and displays a pyramid.
+ */
+
 import java.util.*;
 public class Exercise05_17
 {
