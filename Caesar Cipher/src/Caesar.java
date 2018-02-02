@@ -98,7 +98,6 @@ public class Caesar
                 decrypted += decrytpedChar;
               }
             }
-
             // Print out Decrypted
             System.out.println(decrypted);
             return;
@@ -130,8 +129,8 @@ public class Caesar
               }
               // Display potential ciphers
               System.out.println(decrypted);
+              return;
             }
-            return;
           }
         }
       }
